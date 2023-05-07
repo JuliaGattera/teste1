@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Botão</title>
+
+    <body>
+        <input type=" text " placeholder="Informe um texto" class="textocss">
+        <button onclick="minhaFuncao()">clique-me</button>
+        <script>
+            function minhaFuncao() {
+                var texto = document.querySelector('.textocss').value;
+                alert("tamanho da string:" + texto.length + " texto capturado:  " + texto.substring(2, 4));
+            }
+        </script>
+    </body>
+</head>
+
+</html>

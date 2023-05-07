@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Botão</title>
+
+    <body>
+        <input type=" text " placeholder="Informe um texto" class="textocss">
+        <button onclick="minhaFuncao()">clique-me</button>
+        <script>
+            function minhaFuncao() {
+                var texto = document.querySelector('.textocss').value;
+                var vetor = texto.split('');
+                var result = "";
+                for (var i = 0; i < texto.length; i++) {
+                    switch (vetor[i]) {
+                        case 'a':
+                            {
+                                vetor[i] = "ai";
+                                break;
+                            }
+                        case 'e':
+                            {
+                                vetor[i] = "enter";
+                                break;
+                            }
+                        case 'i':
+                            {
+                                vetor[i] = "imes";
+                                break;
+                            }
+                        case 'o':
+                            {
+                                vetor[i] = "ober";
+                                break;
+                            }
+                        case 'u':
+                            {
+                                vetor[i] = "ufat";
+                                break;
+                            }
+                        default:
+                            {
+                                break;
+                            }
+                    }
+                    result = result + vetor[i];
+                }
+
+                alert(result);
+                //alert("tamanho da string:" + texto.length + " texto capturado:    " + vetor[3]);
+            }
+        </script>
+    </body>
+</head>
+
+</html>
