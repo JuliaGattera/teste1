@@ -1,3 +1,3 @@
-# http://teste1.github.io
+# teste1
 
 este leia-me é apenas um teste.
